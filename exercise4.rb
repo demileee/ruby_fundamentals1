@@ -21,7 +21,7 @@ end
 #3
 puts "What is your name?"
 my_name = "Demi"
-name = gets.to_s
+name = gets.chomp.to_s
 
 if name == my_name
   puts "We have the same name!"
@@ -31,13 +31,11 @@ end
 
 #4
 puts "What is your name?"
-name = gets
-namelength = name.length.to_i - 1
-puts namelength
+name = gets.chomp
 
-if namelength == 10
+if name.length == 10
   puts "hey"
-elsif namelength < 10
+elsif name.length < 10
   puts "hello"
 else
   puts "hi"
